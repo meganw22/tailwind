@@ -15,22 +15,21 @@
 
 .to-do-title {
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .newTaskBox {
   border: 1px solid black;
   background-color: white;
   border-radius: 5px;
+  margin: 5px;
   padding: 5px;
-  margin: 5px 0;
 }
 
 button {
   border: 1px solid cornflowerblue;
   border-radius: 5px;
   padding: 5px 10px;
-  margin-left: 5px;
+  margin: 5px;
   background-color: hsl(219, 79%, 66%);
   color: white;
 }
