@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 
-const ToDoList = () => {
-  const [task, setTask] = useState([]);
+function ToDoList() {
+  const [task, setTask] = useState(["Apples", "bananas", "lemons"]);
   const [newTask, setNewTask] = useState("");
 
-  function handleInputChange(event) {}
+  function handleInputChange(event) {
+    setNewTask(event.target.value);
+  }
 
   function addTask() {}
 
@@ -12,17 +14,23 @@ const ToDoList = () => {
 
   return (
     <>
-      <div className="to-do-title font-bold text-3xl">To-Do List</div>
-      <input
-        type="text"
-        className="newTaskBox"
-        value={newTask}
-        onChange={handleInputChange}
-        placeholder="enter new task..."
-      />
-      <button>Add</button>
+      <div>
+        <h1 className="to-do-title font-bold text-3xl mt-10">To-Do List</h1>
+        <div className="flex justify-center">
+          <input
+            type="text"
+            className="newTaskBox"
+            value={newTask}
+            onChange={handleInputChange}
+            placeholder="enter new task..."
+          />
+          <button>Add</button>
+          <br />
+          <ol></ol>
+        </div>
+      </div>
     </>
   );
-};
+}
 
 export default ToDoList;
