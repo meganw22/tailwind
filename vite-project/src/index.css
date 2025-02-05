@@ -2,4 +2,59 @@
 
 * {
   background-color: aliceblue;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.to-do-title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.newTaskBox {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+button {
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 5px;
+  background-color: hsl(219, 79%, 66%);
+  color: white;
+}
+
+button:hover {
+  background-color: hsl(219, 79%, 56%);
+}
+
+.delete-button {
+  background-color: hsl(0, 56%, 45%);
+  border: 1px solid hsl(0, 56%, 45%);
+}
+
+.delete-button:hover {
+  background-color: hsl(0, 56%, 35%)
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
